@@ -248,6 +248,19 @@ input:checked + .slider:before {
   color: hsl(356, 69%, 56%);
 }
 
+@media all and (min-width: 600px) {
+  .wrapper {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .dashboard-boxes,
+  .o-boxes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: var(--medium);
+  }
+}
+
 @media all and (min-width: 800px) {
   .wrapper {
     max-width: 80%;
