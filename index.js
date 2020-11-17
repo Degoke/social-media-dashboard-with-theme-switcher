@@ -121,7 +121,7 @@ const createOverview = (data, element) => {
     element.innerHTML += `<div class="overview-box">
         <div class="o-upper">
           <p class="o-details">${elem.detials}</p>
-          <img src="/images/icon-${elem.media}.svg" alt="" id="media" />
+          <img src="/images/icon-${elem.media}.svg" alt="" />
         </div>
         <div class="o-lower">
           <p class="o-number">${elem.number}</p>
