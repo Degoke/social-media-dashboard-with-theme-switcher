@@ -1,70 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | social-media-dashboard-with-theme-switcher</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <main class="wrapper">
-    <div class="dashboard">
-      <div class="header">
-        <div class="name">
-          <h1>Social Media Dashboard</h1>
-          <p>Total Followers: 23,004</p>
+    <title>Frontend Mentor | social-media-dashboard-with-theme-switcher</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="overlay"></div>
+      <div class="dashboard">
+        <div class="header">
+          <div class="name">
+            <h1>Social Media Dashboard</h1>
+            <p>Total Followers: 23,004</p>
+          </div>
+          <div class="mode">
+            <p>Dark Mode</p>
+            <label class="switch">
+              <input type="checkbox" id="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
         </div>
-        <div class="mode">
-          <p>Dark Mode</p>
-          <label class="switch">
-            <input type="checkbox" checked>
-            <span class="slider"></span>
-          </label>
-        </div>
+        <div class="dashboard-boxes"></div>
       </div>
-      <div class="dashboard-boxes">
-        <div class="box">
-          <div class="top">
-            <img src="/images/icon-facebook.svg" alt="" class="media">
-            <p class="handle">@nathanf</p>
-          </div>
-          <div class="middle">
-            <p class="number">1987</p>
-            <p class="details">Followers</p>
-          </div>
-          <div class="lower">
-            <img src="/images/icon-down.svg" alt="">
-            <p class="day">12 Today</p>
-          </div>
-        </div>
-        </div>
-        
-    </div>
-    <div class="overview">
-      <h2>Overview - Today</h2>
-      <div class="overview-box"><div class="o-upper">
-        <p class="o-details">Page Views</p>
-        <img src="/images/icon-instagram.svg" alt="" id="media">
+      <div class="overview">
+        <h2>Overview - Today</h2>
+        <div class="o-boxes"></div>
       </div>
-      <div class="o-lower">
-        <p class="o-number">87</p>
-        <p class="percentage"><span><img src="/images/icon-up.svg" alt=""></span>3%</p>
-      </div></div>
-      
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://degoke.github.io/personal-portfolio/">Degoke</a>.
     </div>
-  </main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
